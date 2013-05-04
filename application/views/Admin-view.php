@@ -47,9 +47,9 @@ include_once APPPATH . 'include.php';
 
 		} 
 
-		$arr1['value'] = 'firstName';
-		$arr2['value'] = 'lastName';
-		$arr3['value'] = 'email@gjg.com';
+		// $arr1['value'] = 'firstName';
+		// $arr2['value'] = 'lastName';
+		// $arr3['value'] = 'email@gjg.com';
 
 
 		$fr4 = form_label('Is Administrator', 'isAdmin', array('class'=>'formLabelsAdmin'));
