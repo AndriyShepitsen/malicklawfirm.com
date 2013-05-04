@@ -153,10 +153,11 @@
 	font-family: $fontBookStyle;
 }
 
-.round {
+.disc {
 	@include panel;
 	@include border-radius;
 	@include AlignCenter;
+	display: block;
 	padding-top: 10px;
 	padding-left: 30px;
 	padding-bottom: 10px;

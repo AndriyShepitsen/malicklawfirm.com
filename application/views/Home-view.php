@@ -9,7 +9,7 @@
 
 			<div class="practiceAreas">Practice Areas:</div>
 
-			<ul class="round" >
+			<ul class="disc" >
 				<li>Commercial and Residentional Real Estate Transactions</li>
 				<li>Estate planning - Wills and Trusts</li>
 				<li>Probate</li>
