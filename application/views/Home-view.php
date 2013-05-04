@@ -21,7 +21,7 @@
 	</div>
 
 	<div id="portraitContainer"> 
-		<img id="portraitAnitaMalick" src="<?php echo base_url();?>/comp/img/Black_Anita_portret_200px.jpg" alt="Northbrook Skokie principal attorney president">
+		<img id="portraitAnitaMalick" src="<?php echo base_url();?>/comp/img/Sep_Anita_portret_200px.jpg" alt="Northbrook Skokie principal attorney president">
 
 		<div id="anitaMalickPortraitText">Anita Malick</div>
 		<div id="principalAttorney"> Principal Attorney</div>
