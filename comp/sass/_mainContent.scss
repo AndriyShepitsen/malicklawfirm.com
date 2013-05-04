@@ -117,7 +117,7 @@
 
 	}
 }
-$colorPanel:#4AB6BC;
+
 #advertText {
 	font-family: $mainFontStyle;
 	font-size: 1.1em;
@@ -132,15 +132,15 @@ $colorPanel:#4AB6BC;
 	@include label;
 	@include border-radius;
 	@include AlignCenter;
-	@include box-shadow(#393939 0px 0px 1px);
+	@include box-shadow($fontColor 0px 0px 1px);
 	display:block;
 	width: 550px;
-	background-color: $colorPanel;
+	background-color: $colorLabel;
 	font-size: 1.6em;
 	padding: 10px;
 	text-align: center;
 	text-transform: uppercase;
-	margin-top: 10px;
+	margin-bottom: 1px;
 	font-weight: bold;
 	letter-spacing: 0.2em;
 	font-family: $fontBookStyle;
@@ -150,7 +150,7 @@ $colorPanel:#4AB6BC;
 	@include panel;
 	@include border-radius;
 	@include AlignCenter;
-	background-color: lighten(#F4F2E2, 5%);
+	background-color: $colorPanel;
 	display: block;
 	padding-top: 10px;
 	padding-left: 30px;
@@ -196,7 +196,7 @@ $colorPanel:#4AB6BC;
 	margin-top: 10px;
 }
 #portraitAnitaMalick{
-	@include box-shadow(#393939 0px 0px 2px);
+	@include box-shadow($fontColor 0px 0px 2px);
 }
 
 #principalAttorney {	
@@ -209,7 +209,7 @@ $colorPanel:#4AB6BC;
 #presidentPortraitText {
 	font-size: 1.1em;
 	font-style: italic;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	padding-top: 5px;
 	border-top: 1px solid $border-color;
 	line-height: 25px;
@@ -267,7 +267,6 @@ $colorPanel:#4AB6BC;
 }
 
 #adminContent{
-	// @extend #addUserForm;
 	float: left;
 	width:500px;
 	padding-top: 20px;
@@ -301,7 +300,6 @@ $colorPanel:#4AB6BC;
 				width:200px;
 				
 			}
-
 		}
 
 		th{
@@ -309,11 +307,8 @@ $colorPanel:#4AB6BC;
 			font-weight: bold;
 			border-top: 1px solid grey;
 			border-bottom: 1px solid grey;
-
 		}
-
 	}
-
 }
 
 
@@ -361,9 +356,8 @@ $colorPanel:#4AB6BC;
 }
 
 
-
-
 /*==========  EditUserInformation  ==========*/
+
 #editUserContainer{
 	@extend #adminWrapper;
 
@@ -384,7 +378,6 @@ $colorPanel:#4AB6BC;
 	display: block;
 	font-size: 17px;
 	font-weight: normal;
-	// letter-spacing: 1px;
 }
 
 
@@ -492,7 +485,6 @@ border-bottom: 3px solid #8080FF;
 .partnerAreaInner{
 
 }
-
 
 
 .FileLinksPartner{

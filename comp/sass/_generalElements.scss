@@ -38,6 +38,8 @@ $activeColor:darken(#F48300,5%);
 $footerBack: #FFFFFF;
 $footerBorder: 1px groove #575757;
 $footerFontColor: #333333;
+$colorLabel:#4AB6BC;
+$colorPanel:lighten(#F4F2E2, 5%);
 
 $formBorder:1px inset #BDD3E6;
 
@@ -84,6 +86,6 @@ background-position:center;
 	margin:0 auto;
 	background-color:$outWrapperColor;
 	@include opacity(1); 
-	@include box-shadow(#393939 0px 0px 3px);
+	@include box-shadow($fontColor 0px 0px 3px);
 }
 
