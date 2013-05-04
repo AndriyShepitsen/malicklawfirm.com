@@ -67,10 +67,13 @@ h2{
 //##............ IDs
 
 #booksbg{
-@include background(image-url("library.png"));
-@include background-size(cover);
+//@include background(image-url("library.png"));
+//@include background-size(cover);
 //@include opacity(0.4); 
-
+@include background(image-url("library.png"));
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center;
 }
 
 #outerWrapper{
@@ -89,7 +92,10 @@ html{
 
 body {
 
+body
+{
 
+} 
 //@include background-image(radial-gradient(#E0E0E0, #aaaaaa));
 //@include background-image(radial-gradient(#E0E0E0, #aaaaaa));
 

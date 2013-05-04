@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	 <link href="<?php echo base_url(); ?>/stylesheets/app.css" rel="stylesheet" type="text/css" />
-	  	<link href="<?php echo base_url(); ?>/stylesheets/normalize.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+	 <link href="<?php echo base_url(); ?>/stylesheets/normalize.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
 	
 	<link href="<?php echo base_url(); ?>/comp/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
