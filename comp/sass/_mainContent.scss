@@ -242,14 +242,19 @@
 /*==========  Offices Content starts here  ==========*/
 
 .innerContentLocations {
-padding: 10px;
+margin-left: 25px;
+@include AlignCenter;
 overflow: auto;
 line-height: 1.05em;
+h1{
+	display: block;
+	text-align:center;
+}
 
 }
 .OfficeP{
 font-weight: bold;
-color:darken(#4AB6BC, 15%);
+color: $fontColor;
 margin-bottom: 3px;
 border-bottom: 2px groove #999;
 }
@@ -272,7 +277,7 @@ margin: 0px auto;
 .OfficeDiv{
 float: left;
 width:200px;
-@include panel($bg:lighten(#808080, 16%));
+@include panel($bg:lighten(#808080, 30%));
 @include border-radius(7px);
 @include opacity(0.9);
 }
