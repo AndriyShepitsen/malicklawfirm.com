@@ -1,7 +1,7 @@
 	<!-- //LOCATION: /q/Attorney-Northbrook-Skokie-Offices/Legal-Consultation-Places.html 
 -->
 <div id="content">
-	<div class="innerContent"><h1>Offices Content</h1>
+	<div class="innerContent"><h1>Offices</h1>
 	
 	<ul class="vcard">
 	  
