@@ -4,7 +4,11 @@
 
 // ------------- Mixins
 
-
+@mixin footerTextStyle{
+	text-align: center;
+	vertical-align: top;
+	font-style: italic;
+}
 // ------------- Functions
 
 
@@ -29,12 +33,11 @@
 	padding-top: 5px;
 	padding-bottom: 5px;
 	line-height: 30px;
-	letter-spacing:1px;
+	letter-spacing: 1px;
 }
 
 #footerInfoContainer {
-	overflow: auto;
-	width:100%;
+	@include basicBoxStyle;
 	background-color: $mainContentBackgroundColor;
 	padding-top: 5px;
 }
@@ -45,32 +48,29 @@
 	background-color: $mainContentBackgroundColor;
 }
 .writeStyleFooterLarge {
+	@include footerTextStyle;
+
+	font-size: 1.3em;
 	margin-left: 5px;
 	margin-top: 5px;
-	padding: 0px;
-	text-align: center;
-	vertical-align: top;
-	font-size: 1.3em;
-	font-style: italic;
 }
 
 .writeStyleFooterSmall {
+	@include footerTextStyle;
+
 	margin-right: 10px;
-	padding: 5px;
-	text-align: center;
-	vertical-align: top;
+	padding: 5px;	
 	font-size: 0.85em;
-	font-style: italic;
 	line-height:1.5em;
 	float: right;
 }
 
 .footerSocialImage {
+	float:left;
 	display: block;
 	margin-left: 15px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	float:left;
 }
 
 #authorContent{
