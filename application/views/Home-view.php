@@ -3,7 +3,7 @@
 		<h1 id="companyTitle"> The Malick Law Firm, P.C.</h1>
 		<p id="advertText">Based out on the North shore suburbs in Chicago, The Malick Law Firm, P.C.
 			is committed to providing 
-			Our Clients with quality legal services in the most practical and affordable manner. 
+			Our Clients with quality legal services in the most practical and affordable manner. <br/>
 			Our firm placed high priority on personal service, friendliness and responsiveness to cherish a strong long-lasting relationship.	We work with clients to create innovative solutions and execute legal strategies in the most effective way. At some point or another, we all need a legal professional to advice us and we hope you will let our firm partner up with you. 
 		</p>
 

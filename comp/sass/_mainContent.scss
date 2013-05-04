@@ -99,7 +99,6 @@
 #homeContent{
 	float: left;
 	width: 710px;
-	// border-right: 1px solid $border-color;
 	line-height: 30px;
 	font-family: $mainFontStyle;
 	padding-bottom: 5px;
@@ -110,7 +109,7 @@
 	{text-align: center;
 		font-size: 2.4em;
 		font-family: $mainFontStyle;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 		font-weight: bold;
 		margin-top: 5px;
 		letter-spacing: 1.3px;
@@ -141,7 +140,7 @@ $colorPanel:#4AB6BC;
 	padding: 10px;
 	text-align: center;
 	text-transform: uppercase;
-	margin-bottom: 1px;
+	margin-top: 10px;
 	font-weight: bold;
 	letter-spacing: 0.2em;
 	font-family: $fontBookStyle;
