@@ -241,6 +241,41 @@
 
 /*==========  Offices Content starts here  ==========*/
 
+.innerContentLocations {
+padding: 10px;
+overflow: auto;
+line-height: 1.05em;
+
+}
+.OfficeP{
+font-weight: bold;
+color:darken(#4AB6BC, 15%);
+margin-bottom: 3px;
+border-bottom: 2px groove #999;
+}
+
+#locationMapSkokie{
+width:678px;
+height:407px;
+@include background(image-url("skokie-office.png"));
+margin: 0px auto;
+}
+
+#locationMapNorthBrook{
+width:678px;
+height:407px;
+@include background(image-url("northbrook-office.png"));
+margin-bottom: 2em;
+margin: 0px auto;
+}
+
+.OfficeDiv{
+float: left;
+width:200px;
+@include panel($bg:lighten(#808080, 16%));
+@include border-radius(7px);
+@include opacity(0.9);
+}
 
 
 /*==========  Admin Panel  ==========*/
