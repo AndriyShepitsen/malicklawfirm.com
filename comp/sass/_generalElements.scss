@@ -58,7 +58,7 @@ $fontBookStyle:	"'Palatino Linotype',​ 'Book Antiqua',​ ​serif";
 //##............ IDs
 
 #booksbg{
-@include background(image-url("books-30.png"));
+@include background(image-url("library.jpg"));
 @include background-size(cover);
 //@include opacity(0.4); 
 
