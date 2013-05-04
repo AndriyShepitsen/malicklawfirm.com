@@ -1,6 +1,6 @@
 <div id="content">
 	<div class="innerContent"><h1>Contact Malick Law Firm</h1>
-	
+	<hr/>
 	<?php 
 	echo form_open('Legal-Partner-Skokie-Northbrook/send')
 	?>

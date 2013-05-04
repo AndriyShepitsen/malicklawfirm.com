@@ -36,7 +36,7 @@
 			<div class="footerInfo">
 				<p class="writeStyleFooterSmall">Skokie:
 					</br>4023 Church St.
-					</br>Skokie IL 60076
+					</br>Skokie, IL 60076
 				</p>
 			</div>
 
@@ -45,7 +45,7 @@
 			<div class="footerInfo">
 				<p class="writeStyleFooterSmall">Northbrook:
 					</br>1438 Techny St.
-					</br>Northbrook IL 60062
+					</br>Northbrook, IL 60062
 				</p>
 			</div>
 
