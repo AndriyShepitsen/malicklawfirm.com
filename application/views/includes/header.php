@@ -10,9 +10,9 @@
 	
 	<link href="<?php echo base_url(); ?>/comp/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
-  <!--[if IE]>
+  
   <link href="/comp/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <![endif]-->
+  
   <link href="<?php echo base_url(); ?>/comp/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="<?php echo base_url(); ?>js/script.js"></script>

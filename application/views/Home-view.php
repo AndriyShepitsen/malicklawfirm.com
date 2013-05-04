@@ -7,10 +7,10 @@
 			Our firm placed high priority on personal service, friendliness and responsiveness to cherish a strong long-lasting relationship.	We work with clients to create innovative solutions and execute legal strategies in the most effective way. At some point or another, we all need a legal professional to advice us and we hope you will let our firm partner up with you. 
 		</p>
 
-			<h2 id="practiceAreas">Practice Areas:</h2>
+			<div class="practiceAreas">Practice Areas:</div>
 
-			<ul class="practiceAreasList">
-				<li>Commercial and Residentional Real Estate Transactions;</li>
+			<ul class="round" >
+				<li>Commercial and Residentional Real Estate Transactions</li>
 				<li>Estate planning - Wills and Trusts</li>
 				<li>Probate</li>
 				<li>Trust Administration</li>
