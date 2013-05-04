@@ -29,14 +29,13 @@
 
 			of The Malick Law Firm</div>
 
-			<div id="located">LOCATED AT: </div>
-
 			<ul class="vcard">
+				<li class="localed">LOCATED AT: </li>
 
 				<li class="street-address">1438 Techny Road,</li>
 				<li class="locality">Northbrook</li>
 				<li><span class="state">IL</span>, <span class="zip">60062</span></li>
-				<li class="email"><a href="#">info@malicklawfirm.com</a></li>
+				<li class="email"><a href="#">anita@malicklawfirm.com</a></li>
 			</ul>
 
 				<!-- <div id="technyRoad">1438 Techny Road,<br>

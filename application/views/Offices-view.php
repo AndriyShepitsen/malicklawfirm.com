@@ -9,7 +9,8 @@
 	  <li class="locality">Skokie</li>
 	  <li><span class="state">IL</span>, <span class="zip">60076</span></li>
 	  <li class="email"><a href="#">g.baltar@cmail.com</a></li>
-	</ul></div>
+	</ul>
+</div>
 
 </div>
 <!-- //LOCATION: home/ -->
