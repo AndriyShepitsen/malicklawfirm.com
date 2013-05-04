@@ -65,7 +65,7 @@ $default-text-shadow-v-offset: 10px;
 
 
 header{
-	height: 117px;
+	// height: 117px;
 	padding-top:8px;
 	@include basicBoxStyle;
 }
@@ -135,22 +135,14 @@ input[type=submit]{
 	width:220px;
 }
 
-#userNameActDiv{
-	@extend .userName;
-	@extend .userNameACT;
-}
-
-
 .userName{
-	font-size:.8em;
+	font-size:.7em;
 	color: $mainContentBackgroundColor;
 	text-align:right;
 	font-size: 17px;
 	color:lighten($activeColor, 20%);
 	letter-spacing:1px;
 	margin-bottom: 0px;
-
-
 }
 
 #userNameAct{
@@ -158,6 +150,10 @@ input[type=submit]{
 	margin-bottom: 0px;
 }
 
+#userNameActDiv{
+	@extend .userName;
+	@extend .userNameAct;
+}
 
 .adminLink {
 	display: block;
@@ -165,6 +161,7 @@ input[type=submit]{
 	color: lighten(#DCD9D9, 10%);
 	font-size: 13px;
 	font-style: italic;
+	margin-top: 5px;
 	&:hover{
 		cursor: pointer;
 		color: lighten($hoverColor, 20%);
@@ -178,6 +175,8 @@ input[type=submit]{
 
 .logout {
 	@extend .adminLink;
+	margin-top: 5px;
+	margin-bottom: 5px;
 
 	&:hover{
 		cursor: pointer;
@@ -196,6 +195,7 @@ input[type=submit]{
 	padding-top:8px;
 	padding-right: 6px;
 	text-align: right;
+	vertical-align: bottom;
 }
 
 #facebookHeaderLogo {
