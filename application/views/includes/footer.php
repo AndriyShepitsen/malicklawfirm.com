@@ -13,7 +13,7 @@
 		
 	</div>
 
-	<div id="footerInfoContainer">
+	<div id="footerBottomInfoContainer">
 		<div class="footerInfo">
 			<div class="writeStyleFooterLarge">Connect with Us:</div> 
 			
