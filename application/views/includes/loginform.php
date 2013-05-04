@@ -4,8 +4,7 @@
 			
 			echo form_open('home/login');
 			//////
-			echo form_label('', 'userName', array('class'=>'formLabels'));
-
+			
 			echo form_input(array(
 				'id'=>'userName',
 				'name'=>'userName',
@@ -13,9 +12,7 @@
 				));
 			/////
 
-			echo form_label('', 'userPass', array('class'=>'formLabels'));
-
-			echo form_password(array(
+						echo form_password(array(
 				'id'=>'userPass',
 				'name'=>'userPass',
 				'Placeholder'=>'Password'

@@ -85,12 +85,14 @@ header{
 	#formDivInner{
 	vertical-align: top;
 	text-align: right;
-	height: 62px;
+	
 	
 	input[type=text], input[type=password]{
-		width:$inputFieldWidth;
+		display:inline-block;
+		width:120px;;
 		border-radius: 1px;
 		margin-left: 10px;
+		margin-bottom: 8px;
 		
 	}
 
@@ -100,9 +102,10 @@ header{
 
 input[type=submit]{
 	display:block;
-	width:$inputFieldWidth;
+	width:120px;
 	@include AlighRight;
-	margin-right: 0;
+	margin-top: 2px;
+	margin-right: 0px;
 	border-radius: 1px;
 		// @include box-shadow;
 
@@ -133,6 +136,7 @@ input[type=submit]{
 	font-size: 17px;
 	color:lighten($activeColor, 20%);
 	letter-spacing:1px;
+
 }
 
 #userNameAct{
