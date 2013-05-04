@@ -1,25 +1,36 @@
 <div id="content">
+
 	<div class="innerContent">
 		<h1>The Community</h1>
 	<hr/>
 	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, labore, ipsa, voluptate quibusdam quis repudiandae similique tenetur doloribus cumque molestiae obcaecati saepe eum deleniti nisi perferendis dignissimos dolorum pariatur vero velit totam eos mollitia blanditiis animi hic provident sed ab a? Beatae, omnis, nostrum, voluptas nemo unde quia dignissimos ipsam dolor sapiente commodi a consectetur non corrupti? Consectetur, ducimus, animi vel suscipit architecto sint quod omnis provident consequuntur debitis molestias expedita cumque. Aperiam, quaerat, distinctio, quis, unde quae voluptate corrupti voluptatibus exercitationem architecto est earum iure corporis sequi eos labore aliquid tempora nisi asperiores illum omnis tenetur aspernatur quo alias?
+		Malick Law Firm community involvement is consistent with our company's principles and with our mission
+to provide high quality legal advice and assistance to all members of  North Chicago Community.
 	
+	That is why Malick Law Firm designed to help bridge the justice gap by providing access to the justice system 
+for low and moderate income individuals. When free legal services are unavailable and private attorneys’ 
+fees are unaffordable,Malick Law firm offers low cost legal assistance on a sliding scale basis. 
 	</p>
+	
+	
 	
 	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, labore, ipsa, voluptate quibusdam quis repudiandae similique tenetur doloribus cumque molestiae obcaecati saepe eum deleniti nisi perferendis dignissimos dolorum pariatur vero velit totam eos mollitia blanditiis animi hic provident sed ab a? Beatae, omnis, nostrum, voluptas nemo unde quia dignissimos ipsam dolor sapiente commodi a consectetur non corrupti? Consectetur, ducimus, animi vel suscipit architecto sint quod omnis provident consequuntur debitis molestias expedita cumque. Aperiam, quaerat, distinctio, quis, unde quae voluptate corrupti voluptatibus exercitationem architecto est earum iure corporis sequi eos labore aliquid tempora nisi asperiores illum omnis tenetur aspernatur quo alias?
-	
+	We focused on serving people who are traditionally within low and moderate income ranges or on fixed incomes, such as senior citizens, recent immigrants, victims of domestic violence, and people with disabilities. We believe that working families should also be able to access justice regardless of how much or how little they earn. 
 	</p>
-	
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, labore, ipsa, voluptate quibusdam quis repudiandae similique tenetur doloribus cumque molestiae obcaecati saepe eum deleniti nisi perferendis dignissimos dolorum pariatur vero velit totam eos mollitia blanditiis animi hic provident sed ab a? Beatae, omnis, nostrum, voluptas nemo unde quia dignissimos ipsam dolor sapiente commodi a consectetur non corrupti? Consectetur, ducimus, animi vel suscipit architecto sint quod omnis provident consequuntur debitis molestias expedita cumque. Aperiam, quaerat, distinctio, quis?
-	
+
+<p>
+	Our offices in Skokie and Northbrook serve clients throughout North Chicago Suburbs and beyond. New clients should call to the nearest office to schedule an intake interview. In addition, interview can be scheduled
+	 via <a id='menu7' href="<?php echo base_url(); ?>Legal-Partner-Skokie-Northbrook/Contact-Information.html">Contact Form</a>.
+
+
 	</p>
+
+
 	</div >
 </div>
 
-<!-- //LOCATION: home/ -->
+<!-- //LOCATION: q/NorthBrook-Skokie-Community-Legal-Aid/Neighborhood-Adviser 
+-->
 <script type="text/javascript">
 
 	menuModifier(6);
