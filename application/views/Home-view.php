@@ -38,16 +38,10 @@
 				<li class="email"><a href="#">anita@malicklawfirm.com</a></li>
 			</ul>
 
-				<!-- <div id="technyRoad">1438 Techny Road,<br>
-					Northbrook, IL
-				
-					<div id="phoneNumber">(224) 235-4924</div>
-				
-					<div id="emailAddress">info@malicklawfirm.com </div>
-				
-				</div> -->
 
-			</div>
+
+		</div>
+		</div>
 <!-- //LOCATION: q/home/
 -->
 <script type="text/javascript">
