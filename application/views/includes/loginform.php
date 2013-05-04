@@ -2,7 +2,7 @@
 
 //LOCATION: q/home/
 			
-			echo form_open('home/login');
+			echo form_open('home/login', array('class'=>'user_Form'));
 			//////
 			
 			echo form_input(array(
