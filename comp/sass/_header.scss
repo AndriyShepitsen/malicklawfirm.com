@@ -85,6 +85,9 @@ header{
 	#formDivInner{
 	vertical-align: top;
 	text-align: right;
+	p{
+		margin-bottom: none;
+	}
 	
 	
 	input[type=text], input[type=password]{
@@ -132,7 +135,10 @@ input[type=submit]{
 	width:220px;
 }
 
-
+#userNameActDiv{
+	@extend .userName;
+	@extend .userNameACT;
+}
 
 
 .userName{
@@ -142,11 +148,14 @@ input[type=submit]{
 	font-size: 17px;
 	color:lighten($activeColor, 20%);
 	letter-spacing:1px;
+	margin-bottom: 0px;
+
 
 }
 
 #userNameAct{
 	display: block;
+	margin-bottom: 0px;
 }
 
 
@@ -155,7 +164,6 @@ input[type=submit]{
 	text-decoration:none;
 	color: lighten(#DCD9D9, 10%);
 	font-size: 13px;
-	margin-top: 7px;
 	font-style: italic;
 	&:hover{
 		cursor: pointer;
@@ -183,6 +191,7 @@ input[type=submit]{
 
 
 #facebookHeaderWrapper{
+	display:block;
 	width:100%;
 	padding-top:8px;
 	padding-right: 6px;

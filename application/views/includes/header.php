@@ -47,7 +47,7 @@
 						if ($this->session->userdata('is_LoggedIn')){
 						// echo("tEST");
 
-							echo "<p id='userNameAct' class = 'userName'>" . ($this->session->userdata('userName')) ;
+							echo "<div id='userNameActDiv' >" . ($this->session->userdata('userName')) ;
 
 							$isAdmin = $this->session->userdata('is_Admin');
 							if ($isAdmin) {
@@ -59,7 +59,7 @@
 
 
 							echo anchor('/logout', 'Logout', 'class=\'logout\'');
-							echo('</p>');
+							echo('</div>');
 						} else {
 							include 'loginform.php';
 						}
