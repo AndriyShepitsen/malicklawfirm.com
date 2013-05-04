@@ -2,7 +2,7 @@
 -->
 <div id="content">
 
-	<div class="innerContentLocations"><h1>Our Locations</h1>
+	<div class="innerContentLocations"><h1>Our Locations</h1> <hr/>
 	
 <div id='locationMapSkokie'><div class='OfficeDiv'>
 	<div class='OfficeP'>Skokie Office</div>
