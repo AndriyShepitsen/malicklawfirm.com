@@ -118,12 +118,12 @@
 
 	}
 }
-
+$colorPanel:#4AB6BC;
 #advertText {
 	font-family: $mainFontStyle;
 	font-size: 1.1em;
 	text-align: justify;
-	line-height: 2em;
+	line-height: 2.1em;
 	padding-right: 5px;
 	margin-bottom: none;
 }
@@ -136,7 +136,7 @@
 	@include box-shadow(#393939 0px 0px 1px);
 	display:block;
 	width: 550px;
-	background-color: #4AB6BC;
+	background-color: $colorPanel;
 	font-size: 1.6em;
 	padding: 10px;
 	text-align: center;
