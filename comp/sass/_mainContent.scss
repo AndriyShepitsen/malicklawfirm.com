@@ -1,0 +1,485 @@
+// ============= Main Content =============
+//LOCATION: q/partner
+
+
+// ------------- Mixins
+
+@mixin contentFormatting($anyContentBackgroundColor){
+	overflow:auto;
+	background-color:$anyContentBackgroundColor;
+	padding-bottom:20px;
+	line-height:2em;
+
+}
+@mixin hOneMainContentFormat{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+@mixin pMainContentFormat($anyFontColor){
+	// margin-left: 30px;
+	margin-right: 10px;
+	margin-top: 20px;
+	color:$anyFontColor;
+}
+
+
+@mixin lableContactForm($anyColorFontForm) {
+	display: block;
+	cursor: pointer;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	font-size:1.1em;
+	color:$anyColorFontForm;
+} 
+
+@mixin inputContactForm($anyBorderVariable)	{
+	border:$anyBorderVariable;
+	width:400px;
+	-moz-border-radius: .1em;
+	-webkit-border-radius: .1em;
+	border-radius: .1em;
+}
+@mixin inputAdminForm($anyBorderVariable)	{
+	border:$anyBorderVariable;
+	width:230px;
+	-moz-border-radius: .1em;
+	-webkit-border-radius: .1em;
+	border-radius: .1em;
+}
+
+@mixin submitContactForm{
+	margin-top: 30px;
+	border-radius:5px;
+	height:30px;
+	width:70px;
+	-moz-border-radius: .2em;
+	-webkit-border-radius: .2em;
+	border-radius: .2em;
+	background-color:$bodyBackground;
+}
+@mixin submitUserRegForm{
+	margin-top: 20px;
+	border-radius:5px;
+	height:30px;
+	width:70px;
+	-moz-border-radius: .2em;
+	-webkit-border-radius: .2em;
+	border-radius: .2em;
+	background-color:$bodyBackground;
+}
+
+
+
+#content{
+	.innerContent{
+		width: 100%;
+		padding: 20px;
+
+		.disc{
+			padding-left: 50px;
+		}
+	}
+	@include contentFormatting($mainContentBackgroundColor);
+
+	// h1{
+	// 	// @include hOneMainContentFormat;
+	// }
+	// p{
+	// 	// @include pMainContentFormat($fontColor);
+	// }
+	.vcard{
+		ul{
+				margin-left: 25px; 
+
+		}
+}
+
+}
+
+/*==========  Home-view  ==========*/
+
+#homeContent{
+	float: left;
+	width: 730px;
+	border-right: 1px inset $fontColor;
+	line-height: 30px;
+	font-family: Helvetica, sans-serif, Geneva, Arial;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	padding-right: 12px;
+	margin-left: 20px;
+	h1
+	{text-align: center;
+		font-size: 2.4em;
+		font-family: helvatica;
+		margin-bottom: 15px;
+		font-weight: bold;
+		margin-top: 5px;
+		letter-spacing: 1.3px;
+		color:$fontColor;
+
+	}
+}
+
+#advertText {
+	font-family: helvatica;
+	font-size: 17px;
+	line-height: 1.5em;
+	text-align: justify;
+	// margin-bottom: 5px;
+	line-height: 2em;
+	letter-spacing: 0.06em;
+	padding-right: 5px;
+	// margin-right: 5px;
+}
+
+#practiceAreas {
+	font-size: 1.3em;
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	font-family: "book Antiqua", georgia, "lucida Console", sans-serif, arial;
+}
+
+.practiceAreasList {
+	@include panel(lighten($fontColor, 5%));
+	font-size: 1em;
+	padding-left: 130px;
+	line-height: 1.8em;
+	font-family: helvatica;
+	letter-spacing: 1px;
+}
+
+
+/*==========  =sidebar  ==========*/
+
+
+#portraitContainer {
+	float: left;
+	width: 200px;
+	margin-left: 2px;
+	padding-right: 10px;
+	margin-top: 10px;
+	padding-left: 10px;
+	line-height: 14px;
+	text-align: center;
+	border-left: 1px inset $border-color;
+	font-family:$fontBookStyle;
+	h4{
+		margin:none;
+		line-height: 1.2em;
+		text-align: center;
+	}
+}
+
+#anitaMalickPortraitText {
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+#principalAttorney {	
+	font-size: 1em;
+	font-weight: bold;
+	padding-bottom: 5px;
+	margin-bottom: 2px;
+}
+
+#presidentPortraitText {
+	font-size: 9px;
+	font-style: italic;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	border-top: 1px inset $border-color;
+}
+
+#located{
+	font-size:1em;
+	font-family: "'Book Antiqua',​ ​serif";
+	margin: 5px 0px;
+}
+
+#phoneNumber{
+	font-size:1em;
+	margin-bottom: 5px;
+}
+
+#emailAddress{
+	font-size:14px;
+	font-style:italic;
+}
+
+
+
+
+/*==========  Offices Content starts here  ==========*/
+
+
+
+/*==========  Admin Panel  ==========*/
+
+
+#adminWrapper{
+	@extend #content;
+	@include clearfix;
+
+	input[type=text], input[type=password]{
+		@include inputAdminForm($formBorder);
+		cursor:pointer;
+
+		input[type=submit]{
+			display:block;
+
+			@include submitContactForm;
+			width:80px;;
+			text-align:center;
+
+			&:hover{
+				cursor: pointer;
+				color: $hoverColor;
+			}
+			&:active{
+				color:$activeColor;
+			}
+		}
+	}
+}
+
+#addUserForm {
+	@include float-left;
+	width:380px;
+	margin-right: 20px;
+
+}
+#formFieldSetAdmin{
+	
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	margin-top: 20px;
+	margin-left: 25px;
+	width: 300px;
+	font-size: 17px;
+	font-weight: bold;
+
+	input[type=submit]{
+		font-weight: normal;
+
+		@include submitUserRegForm;
+		width:82px;;
+		text-align:center;
+
+		&:hover{
+			cursor: pointer;
+			color: $hoverColor;
+		}
+		&:active{
+			color:$activeColor;
+
+		}
+	}
+}
+.formLabelsAdmin{
+	color:$fontColor;
+	display: block;
+	font-size: 17px;
+	font-weight: normal;
+	// letter-spacing: 1px;
+}
+
+
+#adminContent{
+	// @extend #addUserForm;
+	float: left;
+	width:560px;
+	
+	table{
+		margin-left: 50px;
+
+		td, tr {
+
+			//border: 1px solid grey;
+			text-align: left;
+			padding-left:10px;
+			width:70px;
+
+			&:nth-of-type(1) {
+				width:50px;
+				text-align:center;
+			}
+
+			&:nth-of-type(2) {
+				width:200px;
+				
+			}
+
+		}
+
+		th{
+			@extend td;
+			font-weight: bold;
+			border-top: 1px solid grey;
+			border-bottom: 1px solid grey;
+
+		}
+
+	}
+
+}
+
+/*==========  EditUserInformation  ==========*/
+#editUserContainer{
+	@extend #adminWrapper;
+
+
+	#editUser{
+		@extend #addUserForm;
+	}
+}
+
+#formFieldSetEditUser{
+	@extend #formFieldSetAdmin;
+	input[type=submit]{
+		width:115px;;
+	}
+}
+.formLabelsEditUser{
+	color:$fontColor;
+	display: block;
+	font-size: 17px;
+	font-weight: normal;
+	// letter-spacing: 1px;
+}
+
+
+#UploadFile{
+	@include float-left;
+	width:300px;
+	margin-top: 32px;
+	margin-left: 30px;
+
+	input[type=submit]{
+		font-weight: normal;
+		@include submitUserRegForm;
+		width:75px;;
+		text-align:center;
+
+
+		&:hover{
+			cursor: pointer;
+			color: $hoverColor;
+		}
+		&:active{
+			color:$activeColor;
+
+		}
+	}
+}
+
+.fileLinks {
+	text-decoration: none;
+	color:darken($hoverColor, 40%);
+	padding: 20px 10px;
+	margin-bottom: 1.5em;
+	font-size: 1.2em;
+}
+
+
+.sysUsers {
+	text-align:center;
+	font-size: 1.3em;
+	margin-top: 0px;
+}
+
+.userFiles {
+	border-top: 1px solid $fontColor;
+	padding-top: 10px;
+	font-weight: bold;
+	color: darken($colorGreen, 30%);
+	text-align: center;
+}
+
+
+.linkEdit{
+	text-decoration:none;
+	color: darken($hoverColor, 20%);
+	margin-right: 10px;
+// margin-left: 10px;
+}
+
+/*==========  contactUsForm  ==========*/
+
+
+#contactUsForm{
+	margin-bottom: 50px;
+	margin-left: 20px;
+	label{
+		@include lableContactForm($fontColor);
+	}
+	input[type="text"]{
+		@include inputContactForm($formBorder);
+	}
+	textarea{
+		@include inputContactForm($formBorder);
+		height: 200px;		
+	}
+}
+
+
+
+form li{
+	list-style:none;
+}
+
+#submit{
+	@include submitContactForm;
+	&:hover{
+		cursor: pointer;
+		color: $hoverColor;
+	}
+	&:active{
+		color:$activeColor;
+
+	}
+
+}
+
+.userArea {
+background-color: white;
+height:500px;
+margin-top: 0px;
+padding: 20px;
+}
+
+#partnerAreap {
+font-size:20px;
+color:black;
+margin-bottom: 1em;
+border-bottom: 3px solid #8080FF;
+}
+
+.partnerAreaInner{
+
+}
+
+
+
+.FileLinksPartner{
+width:400px;
+padding: 20px;
+background-color:#C0C0C0;
+@include border-radius(10px);
+}
+
+#userNameEm{
+font-size: 1.5em;
+font-weight: bold;
+padding-left: 20px;
+padding-bottom: 10px;
+}
+

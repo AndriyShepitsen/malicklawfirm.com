@@ -1,0 +1,236 @@
+
+//LOCATION: q/home
+
+// ============= Header =============
+
+
+//-------------- Variables
+$logoDivSize:386px;
+$formDivSize : $siteWidth - $logoDivSize;
+$formDivInnerPaddingLeft:210px;
+$inputFieldWidth:103px;
+
+$labelsPaddingRight:8px;
+$submitMargins:8px;
+
+$borderWidth:1px;
+$navigationMenuNumber:7;
+$normalLinkColor: white;
+$focusLinkColor: desaturate(#FFF, 10%);
+$hoverLinkColor: darken(#FFF, 10%);
+$activeLinkColor: lighten(#292929, 25%);
+
+$default-text-shadow-color: rgba(red, 0.6);
+$default-text-shadow-blur: 30px;
+$default-text-shadow-v-offset: 10px;
+
+
+// ------------- Mixins
+@mixin AlighRight{
+	margin:$submitMargins $submitMargins 0 auto;
+}
+
+@mixin navPanelFomatting($colorNavBackground, $colorNavBorder) {
+	list-style:none;
+	text-align: center;
+	cursor: pointer;
+	background-color: $colorNavBackground;
+	border-top: 1px groove $colorNavBorder;
+	border-bottom: 1px groove $colorNavBorder;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-family:$fontBookStyle;
+}
+
+@mixin navLiFomatting{
+	display:inline-block;
+	text-transform: uppercase;
+}
+@mixin navAFomatting($colorNavFont) {
+	padding: 10px 12px;	
+	display:block;
+	text-decoration: none;
+	color:$colorNavFont;
+}
+
+@mixin basicBoxStyle {
+	width: 100%;
+	overflow: auto;
+	position: relative;
+}
+
+
+
+/*==========  =header starts here  ==========*/
+
+
+header{
+	height: 117px;
+	padding-top:8px;
+	@include basicBoxStyle;
+}
+
+#logoDiv {
+	width:$logoDivSize;
+	float:left;
+	margin-left:10px;
+}
+
+
+#formDiv {
+	width:$logoDivSize;
+	float:right;
+	margin-right:10px;
+
+	#formDivInner{
+	vertical-align: top;
+	text-align: right;
+	height: 62px;
+	
+	input[type=text], input[type=password]{
+		width:$inputFieldWidth;
+		border-radius: 1px;
+		margin-left: 10px;
+		
+	}
+
+}
+
+
+
+input[type=submit]{
+	display:block;
+	width:$inputFieldWidth;
+	@include AlighRight;
+	margin-right: 0;
+	border-radius: 1px;
+		// @include box-shadow;
+
+		&:hover{
+			cursor: pointer;
+			color: $hoverColor;
+		}
+		&:active{
+			color:$activeColor;
+
+		}
+	}
+}
+
+.valError{
+	color:lighten(red, 25%);
+	@include AlighRight;	
+	width:220px;
+}
+
+
+
+
+.userName{
+	font-size:.8em;
+	color: $mainContentBackgroundColor;
+	text-align:right;
+	font-size: 17px;
+	color:lighten($activeColor, 20%);
+	letter-spacing:1px;
+}
+
+#userNameAct{
+	display: block;
+}
+
+
+.adminLink {
+	display: block;
+	text-decoration:none;
+	color: lighten(#DCD9D9, 10%);
+	font-size: 13px;
+	margin-top: 7px;
+	font-style: italic;
+	&:hover{
+		cursor: pointer;
+		color: lighten($hoverColor, 20%);
+	}
+	&:active{
+		color:lighten($activeColor, 20%);
+	}
+
+
+}
+
+.logout {
+	@extend .adminLink;
+
+	&:hover{
+		cursor: pointer;
+		color: lighten($hoverColor, 20%);
+	}
+	&:active{
+		color:lighten($activeColor, 20%);
+	}
+
+}
+
+
+#facebookHeaderWrapper{
+	width:100%;
+	padding-top:16px;
+	text-align: right;
+}
+
+
+
+
+
+/*==========  =nav  ==========*/
+
+
+
+.navUl {
+	@include navPanelFomatting($mainContentBackgroundColor, $border-color);
+
+	li{
+		@include navLiFomatting;
+
+		a {
+			@include navAFomatting($fontColor);
+
+			&:hover{
+				color:$hoverColor;
+				
+			}
+			&:active{
+				color:$activeColor;
+
+			}
+			
+		}
+
+	}
+
+}
+
+.navUlDown {
+
+		font-weight: bold;
+		color:black;
+	
+
+	
+
+}
+
+.menuItemSelected {
+	font-weight: bold;
+	color:black;
+
+	&:hover{
+				color:black;
+				
+			}
+			&:active{
+				color:black;
+
+			}
+
+}
