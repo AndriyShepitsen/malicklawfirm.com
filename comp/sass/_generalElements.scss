@@ -84,5 +84,6 @@ background-position:center;
 	margin:0 auto;
 	background-color:$outWrapperColor;
 	@include opacity(1); 
+	@include box-shadow;;
 }
 
