@@ -133,6 +133,7 @@
 	@include label;
 	@include border-radius;
 	@include AlignCenter;
+	@include box-shadow(#393939 0px 0px 1px);
 	display:block;
 	width: 550px;
 	background-color: #4AB6BC;
@@ -168,6 +169,7 @@
 
 #portraitContainer {
 	@include panel;
+	@include border-radius(2px);
 	background-color: darken($footerBack, 2%);
 	float: left;
 	width: 220px;
@@ -193,6 +195,9 @@
 	font-size: 1.4em;
 	font-weight: bold;
 	margin-top: 10px;
+}
+#portraitAnitaMalick{
+	@include box-shadow(#393939 0px 0px 2px);
 }
 
 #principalAttorney {	
