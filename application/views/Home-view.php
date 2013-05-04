@@ -23,19 +23,19 @@
 		<div id="portraitContainer"> 
 			<img id="portraitAnitaMalick" src="<?php echo base_url();?>/comp/img/Black_Anita_portret_200px.jpg" alt="Northbrook Skokie principal attorney president">
 
-			<h4 id="anitaMalickPortraitText">Anita Malick</h4>
-			<h4 id="principalAttorney"> Principal Attorney</h4>
-			<h4 id="presidentPortraitText">President <br>
+			<div id="anitaMalickPortraitText">Anita Malick</div>
+			<div id="principalAttorney"> Principal Attorney</div>
+			<div id="presidentPortraitText">President <br>
 
-				of The Malick Law Firm</h4>
+				of The Malick Law Firm</div>
 
-				<h4 id="located">LOCATED AT: </h4>
-				<h4 id="technyRoad">1438 Techny Road,<br>
+				<div id="located">LOCATED AT: </div>
+				<div id="technyRoad">1438 Techny Road,<br>
 					Northbrook, IL
 				
-					<h4 id="phoneNumber">(224) 235-4924</h4>
+					<div id="phoneNumber">(224) 235-4924</div>
 
-					<h4 id="emailAddress">info@malicklawfirm.com </h4>
+					<div id="emailAddress">info@malicklawfirm.com </div>
 
 				</div>
 

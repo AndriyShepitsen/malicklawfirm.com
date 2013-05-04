@@ -42,7 +42,16 @@ $footerFontColor: #333333;
 $formBorder:1px inset #BDD3E6;
 
 $fontBookStyle:	"'Palatino Linotype',​ 'Book Antiqua',​ ​serif";
-
+$mainFontStyle: "Helvetica Neue,​​ Arial,​​ Geneva, Arial, sans-serif";
+h1{
+	font-size: 2.2em;
+}
+h2{
+	font-size: 1.9em;
+}
+h2{
+	font-size: 1.7em;
+}
 @mixin AlignCenter {
 	margin: 0 auto;
 
@@ -58,7 +67,7 @@ $fontBookStyle:	"'Palatino Linotype',​ 'Book Antiqua',​ ​serif";
 //##............ IDs
 
 #booksbg{
-@include background(image-url("library.jpg"));
+@include background(image-url("library.png"));
 @include background-size(cover);
 //@include opacity(0.4); 
 

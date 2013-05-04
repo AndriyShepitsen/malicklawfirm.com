@@ -7,7 +7,7 @@
 @mixin contentFormatting($anyContentBackgroundColor){
 	overflow:auto;
 	background-color:$anyContentBackgroundColor;
-	padding-bottom:20px;
+	padding-bottom: 10px;
 	line-height:2em;
 
 }
@@ -105,8 +105,8 @@
 	width: 730px;
 	border-right: 1px inset $fontColor;
 	line-height: 30px;
-	font-family: "Helvatica, sans-serif, Geneva, Arial";
-	padding-bottom: 10px;
+	font-family: $mainFontStyle;
+	padding-bottom: 20px;
 	margin-top: 10px;
 	padding-right: 12px;
 	margin-left: 20px;
@@ -124,7 +124,7 @@
 }
 
 #advertText {
-	font-family: "Helvatica, sans-serif, Geneva, Arial";
+	font-family: $mainFontStyle;
 	font-size: 17px;
 	line-height: 1.5em;
 	text-align: justify;
@@ -175,45 +175,41 @@
 #portraitContainer {
 	float: left;
 	width: 200px;
+	height: 632px;
 	margin-left: 2px;
 	padding-right: 10px;
 	margin-top: 10px;
 	padding-left: 10px;
-	line-height: 14px;
 	text-align: center;
 	border-left: 1px inset $border-color;
 	font-family:$fontBookStyle;
-	h4{
-		margin:none;
-		line-height: 1.2em;
-		text-align: center;
-	}
+	line-height: 1.2em;
 }
 
 #anitaMalickPortraitText {
-	font-size: 1em;
+	font-size: 1.4em;
 	font-weight: bold;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 #principalAttorney {	
-	font-size: 1em;
+	font-size: 1.2em;
 	font-weight: bold;
-	padding-bottom: 5px;
-	margin-bottom: 2px;
+	padding-bottom: 10px;
+	margin-top: 7px;
 }
 
 #presidentPortraitText {
-	font-size: 9px;
+	font-size: 1em;
 	font-style: italic;
 	margin-bottom: 5px;
 	padding-top: 5px;
 	border-top: 1px inset $border-color;
+	line-height: 23px;
 }
 
 #located{
 	font-size:1em;
-	font-family: "'Book Antiqua',​ ​serif";
 	margin: 5px 0px;
 }
 

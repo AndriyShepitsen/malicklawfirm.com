@@ -1,6 +1,6 @@
 <div id="content">
 	<div class="innerContent"><h1>Our Firm</h1>
-	
+	<hr/>
 	<p>The Malick Law Firm has developed a practice focused on the legal needs of corporate entities
 	and offers services in next primary areas:  Real Estate Law, Intellectual Property Law, 
 	Corporate & Business Law and Family Law. 
