@@ -99,7 +99,7 @@
 #homeContent{
 	float: left;
 	width: 710px;
-	border-right: 1px solid $border-color;
+	// border-right: 1px solid $border-color;
 	line-height: 30px;
 	font-family: $mainFontStyle;
 	padding-bottom: 5px;
@@ -150,6 +150,7 @@
 	@include panel;
 	@include border-radius;
 	@include AlignCenter;
+	background-color: lighten(#F4F2E2, 5%);
 	display: block;
 	padding-top: 10px;
 	padding-left: 30px;
@@ -166,6 +167,8 @@
 
 
 #portraitContainer {
+	@include panel;
+	background-color: darken($footerBack, 2%);
 	float: left;
 	width: 220px;
 	margin-left: 2px;
