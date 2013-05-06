@@ -1,5 +1,5 @@
 // ============= Main Content =============
-//LOCATION: q/partner
+//LOCATION: q/Attorney-Northbrook-Skokie-Offices/Legal-Consultation-Places
 
 
 // ------------- Mixins
@@ -245,6 +245,7 @@
 padding: 20px;
 overflow: auto;
 line-height: 1.05em;
+position:relative;
 
 
 }
@@ -255,27 +256,20 @@ margin-bottom: 3px;
 border-bottom: 2px groove #999;
 }
 
-#locationMapSkokie{
-width:678px;
-height:407px;
-@include background(image-url("skokie-office.png"));
-margin: 0px auto;
+#skokieMap{
+	width: 700px;
+	margin: 20px auto;
 }
 
-#locationMapNorthBrook{
-width:678px;
-height:407px;
-@include background(image-url("northbrook-office.png"));
-margin-bottom: 2em;
-margin: 0px auto;
-}
-
-.OfficeDiv{
+#OfficeDivSkokie{
 float: left;
 width:200px;
 @include panel($bg:lighten(#808080, 30%));
 @include border-radius(7px);
 @include opacity(0.9);
+position:absolute;
+left:175px;
+top:113px;
 }
 
 
