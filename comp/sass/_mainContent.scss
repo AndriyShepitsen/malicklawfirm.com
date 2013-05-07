@@ -1,5 +1,6 @@
 // ============= Main Content =============
-//LOCATION: q/Attorney-Northbrook-Skokie-Offices/Legal-Consultation-Places
+//LOCATION: /q/Attorney-Northbrook-Skokie-Offices/Legal-Consultation-Places.html 
+
 
 
 // ------------- Mixins
@@ -17,6 +18,7 @@
 	margin-left: 30px;
 	margin-top: 20px;
 }
+
 @mixin pMainContentFormat($anyFontColor){
 	// margin-left: 30px;
 	margin-right: 10px;
@@ -249,6 +251,12 @@ position:relative;
 
 
 }
+
+.LocationWrapper{
+	margin: 0 auto 30px auto;
+}
+
+
 .OfficeP{
 font-weight: bold;
 color: $fontColor;
@@ -261,17 +269,30 @@ border-bottom: 2px groove #999;
 	margin: 20px auto;
 }
 
+#NorthbrookMap{
+	@extend #skokieMap;
+}
+
 #OfficeDivSkokie{
 float: left;
-width:200px;
+width:180px;
 @include panel($bg:lighten(#808080, 30%));
 @include border-radius(7px);
-@include opacity(0.9);
+@include opacity(0.8);
 position:absolute;
 left:175px;
 top:113px;
+font-size:0.9em;
 }
 
+#OfficeDivNorthBrook{
+	@extend #OfficeDivSkokie;
+	top:490px;
+}
+
+#OfficeDivNorthBrook {
+	@extend #OfficeDivSkokie;
+}
 
 /*==========  Admin Panel  ==========*/
 
