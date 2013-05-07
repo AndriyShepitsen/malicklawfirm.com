@@ -35,7 +35,7 @@
 				<li class="street-address">1438 Techny Road,</li>
 				<li class="locality">Northbrook</li>
 				<li><span class="state">IL</span>, <span class="zip">60062</span></li>
-				<li class="email"><a href="#">anita@malicklawfirm.com</a></li>
+				
 			</ul>
 
 
