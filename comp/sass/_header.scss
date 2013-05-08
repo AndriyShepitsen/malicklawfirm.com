@@ -97,7 +97,7 @@ header{
 		@include border-radius(3px);
 		margin-left: 10px;
 		margin-bottom: 8px;
-		
+		background-color: none;
 		padding: 4px;
 		height: 23px;
 		
@@ -231,7 +231,7 @@ input[type=submit]{
 
 	}
 
-	@include background-image(linear-gradient(white, #E7ECEF 20%, #DEEBEB 70%, #aaaaaa));
+	@include background-image(linear-gradient(white, #D3DCE2 30%, #E3EEEE 70%, #BFBFBF));
 }
 
 .navUlFooter {

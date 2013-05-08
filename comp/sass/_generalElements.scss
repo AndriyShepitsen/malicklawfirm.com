@@ -17,12 +17,6 @@
 	margin: 0;
 }
 
-
-
-
-// ------------- Functions
-
-
 //-------------- Variables
 
 $siteWidth:	960px;
@@ -62,19 +56,10 @@ h2{
 
 }
 
-// $outWrapperColor: darken(#4AB6BC, 43%);
-// $bodyBackground: #262626;
-// $bodyBackground: lighten(#4AB6BC, 35%);
-
-//.............. Classes
-
 
 //##............ IDs
 
 #booksbg{
-//@include background(image-url("library.png"));
-//@include background-size(cover);
-//@include opacity(0.4); 
 @include background(image-url("library.png"));
 background-repeat:no-repeat;
 background-attachment:fixed;
@@ -91,6 +76,6 @@ background-position:center;
 
 input[type=text], input[type=password], textarea#message{
 
-	background-color:darken(#E1EBEC, 10%);
+	background-color: lighten(#DEEBEB, 3%);
 	@include opacity(0.7);
 }

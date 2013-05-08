@@ -48,12 +48,6 @@
 			</div>
 
 
-			<!-- <div class="footerInfo">
-				<p class="writeStyleFooterSmall">anita@malicklawfirm.com
-					</br>info@malicklawfirm.com
-				</p>
-			 -->
-
 </div>
 </div> <!-- footerInfoContainer -->
 <div id="authorContent">&copy; THE MALICK LAW FIRM 2013
