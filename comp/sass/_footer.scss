@@ -5,19 +5,14 @@
 // ------------- Mixins
 
 @mixin footerTextStyle{
-	text-align: right;
-	vertical-align: center;
+	font-size: 0.85em;
+	line-height:1.5em;
+	text-align: center;
 	font-style: italic;
+	float: right;
+	margin-top: 10px;
+	padding: 5px;
 }
-// ------------- Functions
-
-
-//-------------- Variables
-
-
-
-//.............. Classes
-
 
 #footer{
 	color: $footerFontColor;
@@ -36,12 +31,11 @@
 	letter-spacing: 1px;
 }
 
+
 #footerInfoContainer {
 	@include basicBoxStyle;
 	background-color: $mainContentBackgroundColor;
 	padding-top: 5px;
-
-	
 }
 
 .footerInfoSocial{
@@ -50,32 +44,14 @@
 	float: left;
 }
 
-.footerInfo{
-	float: right;
-	width:155px;
-	background-color: $mainContentBackgroundColor;
-}
 
-
-
-.writeStyleFooterLarge {
-	@include footerTextStyle;
+.connectWithUs {
+	font-size: 1.3em;
+	line-height:1.5em;
+	font-style: italic;
 	text-align:left;
 	padding-left: 10px;
-	font-size: 1.3em;
 	margin-left: 5px;
-	margin-top: 5px;
-
-}
-
-.writeStyleFooterSmall {
-	@include footerTextStyle;
-	margin-top: 5px;
-	margin-left: 10px;
-	padding: 5px;	
-	font-size: 0.85em;
-	line-height:1.5em;
-	float: left;
 }
 
 .footerSocialImage {
@@ -84,6 +60,23 @@
 	margin-left: 15px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.footerInfo{
+	width:155px;
+	@include footerTextStyle;
+	margin-left: 55px;
+}
+
+.footerInfoSkokie{
+	width:130px;
+	@include footerTextStyle;
+	margin-left: 55px;
+}
+
+.footerInfoPhone{
+	width:165px;
+	@include footerTextStyle;
 }
 
 #authorContent{

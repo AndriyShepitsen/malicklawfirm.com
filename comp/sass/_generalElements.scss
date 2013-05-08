@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // ============= General Elements =============
 
 //LOCATION: q/admin/editUser/2
@@ -93,4 +94,86 @@ input[type=text], input[type=password], textarea#message{
 
 	background-color:darken(#E1EBEC, 10%);
 	@include opacity(0.7);
+=======
+// ============= General Elements =============
+
+//LOCATION: q/Legal-Partner-Skokie-Northbrook/Contact-Information
+
+
+// ------------- Mixins
+
+* {
+	vertical-align: top;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	// border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+//-------------- Variables
+
+$siteWidth:	960px;
+$bodyBackground: lighten(#373332, 70%);
+$outWrapperColor: #100900;
+$mainContentBackgroundColor: lighten(#F3F1E4, 7%);
+$border-color: #D9D9D9;
+$color:darken(#373332,20%);
+$colorGreen: #008000;
+$fontColor:#393939;
+$hoverColor:#4AB6BC;
+$activeColor:darken(#F48300,5%);
+$footerBack: #FFFFFF;
+$footerBorder: 1px groove #575757;
+$footerFontColor: #333333;
+$colorLabel:#4AB6BC;
+$colorPanel:lighten(#F4F2E2, 5%);
+
+$formBorder:1px inset #BDD3E6;
+
+$fontBookStyle:	"'Palatino Linotype',​ 'Book Antiqua',​ ​serif";
+$mainFontStyle: "Helvetica Neue,​​ Arial,​​ Geneva, Arial, sans-serif";
+
+
+h1{
+	font-size: 2.2em;
+}
+h2{
+	font-size: 1.9em;
+}
+h2{
+	font-size: 1.7em;
+}
+
+@mixin AlignCenter {
+	margin: 0 auto;
+
+}
+
+
+//##............ IDs
+
+#booksbg{
+@include background(image-url("library.png"));
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center;
+}
+
+#outerWrapper{
+	width:$siteWidth;
+	margin:0 auto;
+	background-color:$outWrapperColor;
+	@include opacity(1); 
+	@include box-shadow($fontColor 0px 0px 3px);
+}
+
+input[type=text], input[type=password], textarea#message{
+
+	background-color: lighten(#DEEBEB, 3%);
+	@include opacity(0.7);
+>>>>>>> 4d39faa2ff3c46c5bafdaf5bc07686ad7f51412b
 }
