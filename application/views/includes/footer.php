@@ -15,7 +15,7 @@
 
 	<div id="footerInfoContainer">
 		<div class="footerInfoSocial">
-			<div class="writeStyleFooterLarge">Connect with Us:</div> 
+			<div class="connectWithUs">Connect with Us:</div> 
 			<a href="https://plus.google.com/u/0/117620011316047345768/posts">
 				<img class="footerSocialImage" src="<?php echo base_url(); ?>comp/img/GooglePlus.png" width="32" height="33">
 			</a>
@@ -27,26 +27,24 @@
 						<img class="footerSocialImage" src="<?php echo base_url(); ?>comp/img/YouTube.png" width="32" height="33"></a>
 			</div>
 
-			<div class="footerInfo">
-				<div class="writeStyleFooterSmall"><strong>Phone:</strong> 224-235-4924
-					</br><strong>Fax:</strong> 224-235-4923	
-				</br><strong>Cell:</strong> 321-662-9893	</div>
-			</div>
+			
 
-			<div class="footerInfo">
-				<p class="writeStyleFooterSmall"><strong>Skokie</strong>:
+			<div class="footerInfoSkokie">
+				<strong>Skokie</strong>:
 					</br>4023 Church St.
 					</br>Skokie IL, 60076
-				</p>
 			</div>
 
-
-
 			<div class="footerInfo">
-				<p class="writeStyleFooterSmall"><strong>Northbrook:</strong>
+				<strong>Northbrook:</strong>
 					</br>1438 Techny St.
 					</br>Northbrook IL, 60062
-				</p>
+			</div>
+
+			<div class="footerInfoPhone">
+				<strong>Phone:</strong> 224-235-4924
+					</br><strong>Fax:</strong> 224-235-4923	
+				</br><strong>Cell:</strong> 321-662-98
 			</div>
 
 
