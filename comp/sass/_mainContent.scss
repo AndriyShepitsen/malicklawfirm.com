@@ -415,7 +415,7 @@ font-size:0.9em;
 
 .formLabelsAdmin{
 	color:$fontColor;
-	display: block;
+	display: inline;
 	font-size: 17px;
 	font-weight: normal;
 	// letter-spacing: 1px;
@@ -443,15 +443,17 @@ font-size:0.9em;
 }
 .formLabelsEditUser{
 	color:$fontColor;
-	display: block;
+	display: inline;
 	font-size: 17px;
 	font-weight: normal;
+	margin-right: 10px;
 }
 
 
 #UploadFile{
 	@include float-left;
-	width:300px;
+	width:400px;
+	padding: 20px;
 	margin-top: 32px;
 	margin-left: 30px;
 
@@ -471,6 +473,10 @@ font-size:0.9em;
 
 		}
 	}
+	background-color:#BBBFBF;
+	@include border-radius(8px);
+	@include box-shadow;
+	border: 1px groove darken(#BBBFBF, 10%);
 }
 
 .fileLinks {
@@ -486,9 +492,10 @@ font-size:0.9em;
 .userFiles {
 	border-top: 1px solid $fontColor;
 	padding-top: 10px;
-	font-weight: bold;
+	
 	color: darken($colorGreen, 30%);
 	text-align: center;
+	font-size: 115%;
 }
 
 

@@ -52,8 +52,12 @@ include_once APPPATH . 'include.php';
 		// $arr3['value'] = 'email@gjg.com';
 
 
-		$fr4 = form_label('Is Administrator', 'isAdmin', array('class'=>'formLabelsAdmin'));
-		$inp4 =  form_checkbox('isAdmin', 'Administrator', FALSE); 
+		
+		$fr4 = form_label('Is Administrator', 'isAdmin', array('class'=>'formLabelsEditUser', 'for'=>'isAdmin'));
+		//$inp4 =  form_checkbox('isAdmin', 'Administrator', $isAdminView, array('id'=>'isAdmin')); 
+		$inp4 =  form_checkbox(array('id'=>'isAdmin', 'name'=>'isAdmin', 'checked'=>FALSE, 'value'=>'Administrator')); 
+
+		
 
 		$inp1 = form_input($arr1);
 		$inp2 = form_input($arr2);
@@ -65,11 +69,9 @@ include_once APPPATH . 'include.php';
 		$this->table->add_row($fr2);
 		$this->table->add_row($inp2);
 		$this->table->add_row($fr3);	
-		$this->table->add_row($inp3);	
-		$this->table->add_row($fr4);	
-		$this->table->add_row($inp4);	
+		$this->table->add_row($inp3);
 
-
+		$this->table->add_row($fr4 .'    '. $inp4);	
 
 
 		$arrSubmit = array(

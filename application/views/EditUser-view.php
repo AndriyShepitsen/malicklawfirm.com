@@ -1,5 +1,5 @@
 <?php
-//LOCATION: admin/editUser/2
+//LOCATION: q/admin/editUser/2
 include_once APPPATH . 'include.php';
 ?>
 <div id="editUserContainer">
@@ -75,8 +75,7 @@ include_once APPPATH . 'include.php';
 		$inp3 = form_input($arr3);
 		$inp31 = form_input($arr31);
 
-
-		$this->table->add_row($fr1);	
+				$this->table->add_row($fr1);	
 		$this->table->add_row($inp1);	
 		$this->table->add_row($fr2);
 		$this->table->add_row($inp2);
@@ -85,11 +84,12 @@ include_once APPPATH . 'include.php';
 		$this->table->add_row($fr31);	
 		$this->table->add_row($inp31);	
 
-		$fr4 = form_label('Is Administrator', 'isAdmin', array('class'=>'formLabelsEditUser'));
-		$inp4 =  form_checkbox('isAdmin', 'Administrator', $isAdminView); 
+		$fr4 = form_label('Is Administrator', 'isAdmin', array('class'=>'formLabelsEditUser', 'for'=>'isAdmin'));
+		//$inp4 =  form_checkbox('isAdmin', 'Administrator', $isAdminView, array('id'=>'isAdmin')); 
+		$inp4 =  form_checkbox(array('id'=>'isAdmin', 'name'=>'isAdmin', 'checked'=>$isAdminView, 'value'=>'Administrator')); 
 
-		$this->table->add_row($fr4);	
-		$this->table->add_row($inp4);	
+		$this->table->add_row($fr4 .'    '. $inp4);	
+		
 
 		$arrWspace =array(
 			'data'=>'		-	', 
@@ -111,8 +111,8 @@ include_once APPPATH . 'include.php';
 			$userFileLink = anchor(base_url().'uploads/'.$arrFileIdFileName[1], $arrFileIdFileName[1], array('class'=>'fileLinks', 'target'=>'_blank'));
 
 
-			$this->table->add_row($userFileLink);
-			$this->table->add_row(form_checkbox($arrFileIdFileName[0], $arrFileIdFileName[1], TRUE) );
+			//$this->table->add_row();
+			$this->table->add_row(form_checkbox($arrFileIdFileName[0], $arrFileIdFileName[1], TRUE).' '.$userFileLink);
 
 		}
 
