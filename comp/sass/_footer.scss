@@ -5,8 +5,8 @@
 // ------------- Mixins
 
 @mixin footerTextStyle{
-	text-align: center;
-	vertical-align: top;
+	text-align: right;
+	vertical-align: center;
 	font-style: italic;
 }
 // ------------- Functions
@@ -40,29 +40,42 @@
 	@include basicBoxStyle;
 	background-color: $mainContentBackgroundColor;
 	padding-top: 5px;
+
+	
+}
+
+.footerInfoSocial{
+	width:360px;
+	margin-right: 15px;
+	float: left;
 }
 
 .footerInfo{
-	float: left;
-	width:$siteWidth/5;
+	float: right;
+	width:155px;
 	background-color: $mainContentBackgroundColor;
 }
+
+
+
 .writeStyleFooterLarge {
 	@include footerTextStyle;
-
+	text-align:left;
+	padding-left: 10px;
 	font-size: 1.3em;
 	margin-left: 5px;
 	margin-top: 5px;
+
 }
 
 .writeStyleFooterSmall {
 	@include footerTextStyle;
-
-	margin-right: 10px;
+	margin-top: 5px;
+	margin-left: 10px;
 	padding: 5px;	
 	font-size: 0.85em;
 	line-height:1.5em;
-	float: right;
+	float: left;
 }
 
 .footerSocialImage {

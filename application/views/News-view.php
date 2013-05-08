@@ -44,6 +44,9 @@ and $5,250,000 in 2013.
 <!-- //LOCATION: q/home/ -->
 <script type="text/javascript">
 
+$(function() {
+	
 	menuModifier(5);
+});
 
 </script>

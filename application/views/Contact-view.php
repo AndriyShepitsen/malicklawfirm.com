@@ -33,6 +33,9 @@
 -->
 <script type="text/javascript">
 
+$(function() {
+	
 	menuModifier(7);
+});
 
 </script>

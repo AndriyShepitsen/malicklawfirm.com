@@ -30,6 +30,9 @@
 -->
 <script type="text/javascript">
 
+$(function() {
+	
 	menuModifier(2);
+});
 
 </script>

@@ -33,6 +33,9 @@
 
 <script type="text/javascript">
 
-menuModifier(4);
+$(function() {
+	
+	menuModifier(4);
+});
 
 </script>

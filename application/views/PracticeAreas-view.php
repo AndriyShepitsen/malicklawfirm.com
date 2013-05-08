@@ -153,6 +153,9 @@
 -->
 <script type="text/javascript">
 
-menuModifier(3);
+$(function() {
+	
+	menuModifier(3);
+});
 
 </script>

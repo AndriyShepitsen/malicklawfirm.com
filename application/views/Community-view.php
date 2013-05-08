@@ -33,6 +33,10 @@ fees are unaffordable,Malick Law firm offers low cost legal assistance on a slid
 -->
 <script type="text/javascript">
 
-	menuModifier(6);
+$(function(){
+menuModifier(6);
+
+});
+	
 
 </script>

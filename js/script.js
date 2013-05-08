@@ -4,7 +4,11 @@ if (currentMenu===null)
 
 var activeMenu = $('#menu'+currentMenu);
 
-activeMenu.removeAttr('href').addClass('navUlDown');
+activeMenu.removeAttr('href');
+activeMenu.css('color', '#C16600');
+
+var activeMenuFooter = $('#menu'+currentMenu+'f');
+activeMenuFooter.removeAttr('href').css('color', '#C16600');
 
 };
 
