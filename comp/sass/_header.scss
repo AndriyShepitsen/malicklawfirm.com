@@ -100,7 +100,6 @@ header{
 		background-color: none;
 		padding: 4px;
 		height: 23px;
-		
 	}
 
 }
@@ -117,7 +116,6 @@ input[type=submit]{
 	margin-right: 0px;
 
 	@include border-radius(2px);
-		// @include box-shadow;
 
 		&:hover{
 			cursor: pointer;
