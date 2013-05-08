@@ -281,7 +281,7 @@ float: left;
 width:180px;
 @include panel($bg:lighten(#808080, 30%));
 @include border-radius(7px);
-@include opacity(0.8);
+@include opacity(0.75);
 position:absolute;
 left:175px;
 top:113px;
@@ -306,7 +306,7 @@ font-size:0.9em;
 
 	input[type=text], input[type=password]{
 		@include inputAdminForm($formBorder);
-		cursor:pointer;
+		//cursor:pointer;
 
 		input[type=submit]{
 			display:block;
@@ -316,7 +316,7 @@ font-size:0.9em;
 			text-align:center;
 
 			&:hover{
-				cursor: pointer;
+				//cursor: pointer;
 				color: $hoverColor;
 			}
 			&:active{
@@ -387,12 +387,12 @@ font-size:0.9em;
 	margin-top: 20px;
 	margin-left: 25px;
 	width: 300px;
-	font-size: 17px;
-	font-weight: bold;
+	
+	//font-weight: bold;
 
 	input[type=submit]{
 		font-weight: normal;
-
+		
 		@include submitUserRegForm;
 		width:82px;;
 		text-align:center;
@@ -406,7 +406,13 @@ font-size:0.9em;
 
 		}
 	}
+	legend{
+	font-size: 18px;
+	font-weight: normal;
+	}
+
 }
+
 .formLabelsAdmin{
 	color:$fontColor;
 	display: block;
@@ -430,8 +436,10 @@ font-size:0.9em;
 #formFieldSetEditUser{
 	@extend #formFieldSetAdmin;
 	input[type=submit]{
-		width:115px;;
+		width:115px;
 	}
+	
+
 }
 .formLabelsEditUser{
 	color:$fontColor;

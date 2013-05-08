@@ -80,11 +80,13 @@ include_once APPPATH . 'include.php';
 
 
 		$this->table->add_row($fr5);	
-
-		echo $this->table->generate();
-		if (isset($val_errors_form2)) {
+			if (isset($val_errors_form2)) {
 			echo $val_errors_form2;
 		}
+
+		
+		echo $this->table->generate();
+	
 		echo form_fieldset_close();
 
 		

@@ -210,6 +210,7 @@ class Admin extends CI_Controller {
 	 	
 	 	$this->Users->saveUser($newUser);
 
+	 	unset ($_POST);
 	  	$this->index();
 	 }
 
